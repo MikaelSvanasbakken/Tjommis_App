@@ -1,0 +1,43 @@
+page-loading {
+  ion-content {
+    @include linear-gradient(right bottom, $tjommis-bg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .spinner{
+    transform:translate(33%,400%);
+
+  }
+  .quote{
+    transform:translate(14%, 500%);
+     color: white;
+         text-shadow: 0px 2px 4px black;
+  }
+ .changingText{
+   position: fixed;
+       color: white;                       
+           text-shadow: 0px 2px 4px black; 
+
+   transform:translate(14%, 500%)
+ }
+   .test{
+     position: relative;
+     position: center;
+     text-align: center;
+     top: 135px;
+     right: 5px;
+     color: white;                       
+         text-shadow: 0px 2px 4px black;
+     
+   }
+  ion-spinner > svg {
+      width: 80px !important;
+      height: 80px !important;
+
+
+}
+
+
+
+  }

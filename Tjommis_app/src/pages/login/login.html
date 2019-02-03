@@ -1,0 +1,64 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <h1 class="logoH1">Tjommis</h1>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+        <ion-col text-center>
+          <form [formGroup]="loginFormGroup">
+            <ion-item>
+              <ion-label floating>Username</ion-label>
+              <ion-input formControlName="username" type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item *ngIf="!loginFormGroup.controls.username.valid  && (loginFormGroup.controls.username.dirty || submitAttempt)">
+                <p>Please enter a valid name.</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Password</ion-label>
+              <ion-input formControlName="password"  type="password" value="" ></ion-input>
+            </ion-item>
+            <ion-item *ngIf="!loginFormGroup.controls.password.valid  && (loginFormGroup.controls.password.dirty || submitAttempt)">
+                <p>Please enter a valid password.</p>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Velg din tilhørighet</ion-label>
+              <ion-select formControlName="affiliation">
+                <ion-option value="h">Høysskolen Kristiania</ion-option>
+                <ion-option value="w">Westerdals</ion-option>
+              </ion-select>
+            </ion-item>
+          </form>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button color="secondary"(click)="login()">Logg inn</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <ion-chip *ngIf="submitAttempt && !loginFormGroup.valid" color="danger">
+         <ion-label>{{errorMessage}}</ion-label>
+        </ion-chip>
+        <ion-chip *ngIf="submitAttempt && statusMessage != ''" color="secondary">
+          <ion-label>{{statusMessage}}</ion-label>
+        </ion-chip>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

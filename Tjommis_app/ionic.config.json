@@ -1,0 +1,17 @@
+{
+  "name": "Tjommis_app",
+  "integrations": {},
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path":"/token",
+      "proxyUrl": "https://smidigprosjekt.azurewebsites.net/token",
+      "rejectUnauthorized":false
+    },
+    {
+      "path":"/developer_token",
+      "proxyUrl": "https://localhost:5001/token",
+      "rejectUnauthorized":false
+    }
+  ]
+}

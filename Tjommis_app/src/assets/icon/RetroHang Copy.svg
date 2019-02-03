@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="92" viewBox="0 0 92 92">
+  <defs>
+    <filter id="retrohang-copy-a" width="135%" height="135%" x="-17.5%" y="-17.5%" filterUnits="objectBoundingBox">
+      <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="retrohang-copy-b" x1="0%" x2="102%" y1="0%" y2="101%">
+      <stop offset="0%" stop-color="#3023AE"/>
+      <stop offset="100%" stop-color="#C86DD7"/>
+    </linearGradient>
+    <circle id="retrohang-copy-c" cx="40" cy="40" r="40"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#retrohang-copy-a)" transform="translate(4 4)">
+    <path stroke="#5013FE" stroke-linecap="square" d="M30.5 78.5L49.5 78.5M23.5 76.5L56.5 76.5M19.5 74.5L60.5 74.5M16.5 72.5L63.5 72.5M13.5 70.5L65.5 70.5M11.5 68.5L68.5 68.5M10.5 66.5L69.5 66.5M8.5 64.5L70.5 64.5M6.5 62.5L73.5 62.5M5.5 60.5L74.5 60.5M4.5 58.5L75.5 58.5M3.5 56.5L76.127907 56.5"/>
+    <use fill-rule="nonzero" stroke="url(#retrohang-copy-b)" stroke-width="3" xlink:href="#retrohang-copy-c"/>
+  </g>
+</svg>
