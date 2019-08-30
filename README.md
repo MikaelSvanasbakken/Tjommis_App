@@ -1,4 +1,4 @@
-# Tjommis.
+# Tjommis - Prototype Version.
 
 # Hva er Tjommis?
 Tjommis er en app som lar ensome studenter som er nye i byen connecte med andre studenter med samme interesser som en selv.
